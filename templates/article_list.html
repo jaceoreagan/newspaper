@@ -9,7 +9,9 @@
         <span class="fw-bold">
           <a href="{{ article.get_absolute_url }}">{{ article.title }}</a>
         </span> &middot;
-        <span class="text-muted">by {{ article.author }} |
+        <span class="text-muted">by 
+          {% include "includes/avatar.html" with person=article.author %} 
+          {{ article.author }} |
           {{ article.date }}</span>
       </div>
       <div class="card-body">
@@ -24,6 +26,7 @@
         {% for comment in article.comment_set.all %}
           <p>
             <span class="fw-bold">
+              {% include "includes/avatar.html" with person=comment.author size=22 %} 
               {{ comment.author }} &middot;
             </span>
             {{ comment }}

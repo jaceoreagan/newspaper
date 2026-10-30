@@ -1,0 +1,33 @@
+/* Body text */
+body {
+  font-family: 'Lora', Georgia, serif;
+}
+
+/* Headlines */
+h1, h2, h3, .card-header a {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+}
+
+/* Masthead */
+.navbar-brand {
+  font-family: 'UnifrakturMaguntia', serif;
+  font-size: 2rem;
+}
+
+/* DiceBear avatars */
+.avatar {
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 0.25rem;
+}
+
+/* Weather / date bar under the masthead */
+.weather-bar {
+  border-top: 1px solid #222;
+  border-bottom: 3px double #222;
+  padding: 0.35rem 0;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
